@@ -13,6 +13,8 @@ jobs:
                echo "welcome"
                echo "hello again"
                echo "you still there?"
+            - name: Install Cowsay
+              run: apt install cowsay
             - name: Generate Ascii Artwork
               run: cowsay -f dragon "THIS IS A MESSAGE FROM A DRAGON!!!"
             - name: What do you want?
