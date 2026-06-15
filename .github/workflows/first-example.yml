@@ -8,9 +8,13 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v6.0.3
-              
             - name: Welcome
-              run: echo "welcome"
+              run: |
+               echo "welcome"
+               echo "hello again"
+               echo "you still there?"
+            - name: Generate Ascii Artwork
+              run: cowsay -f dragon "THIS IS A MESSAGE FROM A DRAGON!!!"
             - name: What do you want?
               run: echo "What do you want?"
             - name: List Files
